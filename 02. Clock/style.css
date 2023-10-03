@@ -4,9 +4,23 @@
 }
 
 .container {
-  height: 100vh;
-  background-color: lightblue;
   position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  background-color: lightblue;
+}
+
+.header--text {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 80%);
 }
 
 .clock--border {
@@ -47,20 +61,17 @@
   transform-origin: left;
 }
 
-.hand.hour {
+.hand.hand--hour {
   width: 120px;
   background-color: lightcyan;
-  transform: rotate(0deg);
 }
 
-.hand.minute {
-  width: 140px;
+.hand.hand--minute {
+  width: 160px;
   background-color: lightpink;
-  transform: rotate(90deg);
 }
 
-.hand.second {
+.hand.hand--second {
   width: 180px;
   background-color: lightgoldenrodyellow;
-  transform: rotate(180deg);
 }
