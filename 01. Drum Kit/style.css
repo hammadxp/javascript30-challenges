@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("background.jpg");
+  height: 100vh;
+  position: relative;
+}
+
+.btn-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  border: 3px solid black;
+  padding: 8px;
+  width: fit-content;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 52px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all;
+  transition-duration: 200ms;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.btn.playing {
+  border: 3px solid yellow;
+  transform: scale(1.2);
+}
+
+.btn strong {
+  color: white;
+  font-size: 32px;
+}
+
+.btn p {
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 10px;
+}
