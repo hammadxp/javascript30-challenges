@@ -1,0 +1,57 @@
+:root {
+  --image-bg: #ffc600;
+  --image-width: 100%;
+  --image-height: 100%;
+  --image-blur: 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: #132e3e;
+  color: white;
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  padding: 32px 0px;
+}
+
+h2 span {
+  color: var(--image-bg);
+}
+
+.inputs {
+  text-align: center;
+  font-size: 28px;
+}
+
+.image--container {
+  background-color: var(--image-bg);
+  padding: 20px;
+  margin-top: 60px;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image--container img {
+  width: var(--image-width);
+  height: var(--image-height);
+  filter: blur(var(--image-blur));
+}
